@@ -1,0 +1,38 @@
+/* 全局样式 */
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 360px;
+  max-width: 1168px;
+}
+
+/* element-ui menu is-active class */
+.header-menu > .el-menu-item.is-active::after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  height: 4px;
+  width: 100%;
+  content: '';
+  background: #2c5b39;
+}
+.header-menu > .el-menu-item::after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  height: 4px;
+  width: 0;
+  content: '';
+  background: #2c5b39;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transition: linear 0.2s all;
+  -webkit-transition: linear 0.2s all;
+  z-index: 1;
+}
+.header-menu > .el-menu-item:hover::after {
+  width: 100%;
+}

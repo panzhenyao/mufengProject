@@ -12,6 +12,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Editor directories and files
+.eslintrc.js
+.prettierrc
 .idea
 .vscode
 *.suo

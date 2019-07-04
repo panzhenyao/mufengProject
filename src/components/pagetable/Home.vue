@@ -1,9 +1,5 @@
 <template>
-  <div id="app">
-    <mf-header></mf-header>
-    <router-view />
-    <mf-footer></mf-footer>
-  </div>
+  <div>主体内容</div>
 </template>
 
 <script>
