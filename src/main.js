@@ -19,11 +19,15 @@ import './plugins/element.js'
  * 样式部分
  * 全局样式
  * 阿里字体图标
- * element-ui.css
+ * hamburgers 样式
+ * element-ui index.css
+ * element-ui 响应式布局css
  */
 import './assets/css/global.css'
 import './assets/fonts/iconfont.css'
+import './assets/css/hamburgers.min.css'
 import 'element-ui/lib/theme-chalk/index.css'
+import 'element-ui/lib/theme-chalk/display.css'
 
 Vue.config.productionTip = false
 
