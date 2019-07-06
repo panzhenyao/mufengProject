@@ -18,7 +18,12 @@
       </el-col>
       <el-col :span="18" class="hidden-md-and-up">
         <div class="communicate-nav">
-          <button class="hamburger hamburger--spin" :class="{'is-active' : communBtn_isActive}" type="button" @click="communBtn_isActive=!communBtn_isActive">
+          <button
+            class="hamburger hamburger--spin"
+            :class="{'is-active' : communBtn_isActive}"
+            type="button"
+            @click="communBtn_isActive=!communBtn_isActive"
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -83,27 +88,10 @@ export default {
 </script>
 
 <style lang='less' scoped>
-.api-icon {
-  height: 72px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-/* 阿里字体颜色 */
-.icon-qq,
-.icon-weixin,
-.icon-weibo {
-  font-size: 18px/1;
-  color: #2c5b39;
-}
-.icon-weixin {
-  margin: 0 18px;
-}
 /* 沐风logo */
 .logo-mf {
   position: relative;
-  top: -15px;
+  top: -35px;
   font-size: 0;
   > img {
     max-width: 170px;

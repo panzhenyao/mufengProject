@@ -17,17 +17,21 @@ import './plugins/element.js'
 
 /*
  * 样式部分
+ * normalize.css
  * 全局样式
  * 阿里字体图标
  * hamburgers 样式
  * element-ui index.css
- * element-ui 响应式布局css
+ * element-ui display.css
+ * boostrap.css
  */
+// import './assets/css/normalize-v8.css'
 import './assets/css/global.css'
 import './assets/fonts/iconfont.css'
 import './assets/css/hamburgers.min.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'element-ui/lib/theme-chalk/display.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 Vue.config.productionTip = false
 
