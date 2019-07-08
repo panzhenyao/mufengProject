@@ -12,8 +12,10 @@ import mfFooter from './components/home/Footer.vue'
 /*
  * 插件部分
  * element-ui
+ * vue-awesome-swiper 轮播图插件
  */
 import './plugins/element.js'
+import './plugins/swiper.js'
 
 /*
  * 样式部分
@@ -24,6 +26,7 @@ import './plugins/element.js'
  * element-ui index.css
  * element-ui display.css
  * boostrap.css
+ * swiper css
  */
 // import './assets/css/normalize-v8.css'
 import './assets/css/global.css'
@@ -32,6 +35,8 @@ import './assets/css/hamburgers.min.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'element-ui/lib/theme-chalk/display.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'vue-awesome-swiper/node_modules/swiper/dist/css/swiper.min.css'
+// import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
 

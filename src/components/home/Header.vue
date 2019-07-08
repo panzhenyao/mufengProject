@@ -1,5 +1,5 @@
 <template>
-  <div class="fix-header">
+  <div class="fix-header" ref="sss">
     <el-row>
       <el-col class="api-icon">
         <!-- 企业导航 -->
@@ -88,6 +88,7 @@ export default {
 </script>
 
 <style lang='less' scoped>
+
 /* 沐风logo */
 .logo-mf {
   position: relative;
