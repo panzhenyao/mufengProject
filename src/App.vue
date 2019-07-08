@@ -4,8 +4,8 @@
     <router-view />
     <mf-footer></mf-footer>
     <!-- 电梯导航 -->
-    <section class="elevator-nav">
-      <div class="mf-aside-btn erweima-box">
+    <section v-show="toTopIsShow" class="elevator-nav">
+      <div  class="mf-aside-btn erweima-box">
         <div class="erweima-img">
           <img :src="erweimaSrc" />
         </div>
@@ -42,16 +42,16 @@ export default {
     // 回到顶部
     backTop: function() {
       // 获取当前的窗口滚动距离
-      const appScrollTopNow = {
+      let appScrollTopNow = {
         y: window.scrollY
       } // ================================= 定义一个初始位置
-      const appScrollTopEnd = {
+      let appScrollTopEnd = {
         y: 0
       } // ================================= 定义一个结束位置
 
       // 设置新的缓动动画
       new TWEEN.Tween(appScrollTopNow) // 传入开始位置
-        .to(AppScrollTopEnd, 600) // 指定时间内完成结束位置
+        .to(appScrollTopEnd, 600) // 指定时间内完成结束位置
         .easing(TWEEN.Easing.Quadratic.Out) // 缓动方法名
         .onUpdate(() => {
           // 上面的值更新时执行的设置
@@ -66,7 +66,7 @@ export default {
     var _this = this
     window.onscroll = function() {
       // 鼠标滚轮滚动距离超过10像素时，回到顶部按钮才显示
-      if (document.documentElement.scrollTop > 10) {
+      if (document.documentElement.scrollTop > 50) {
         _this.toTopIsShow = true
       } else {
         _this.toTopIsShow = false
